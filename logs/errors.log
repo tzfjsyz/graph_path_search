@@ -1,0 +1,972 @@
+2018-05-21 14:36:50,826 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 30, in handler_update_total_data
+    flag =  request.rel_url.query['flag']
+  File "multidict/_multidict.pyx", line 140, in multidict._multidict._Base.__getitem__
+  File "multidict/_multidict.pyx", line 135, in multidict._multidict._Base._getone
+KeyError: "Key not found: 'flag'"
+2018-05-21 14:38:01,146 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 30, in handler_update_total_data
+    flag = request.rel_url.query['flag']
+  File "multidict/_multidict.pyx", line 140, in multidict._multidict._Base.__getitem__
+  File "multidict/_multidict.pyx", line 135, in multidict._multidict._Base._getone
+KeyError: "Key not found: 'flag'"
+2018-05-21 14:38:53,926 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 33, in handler_update_total_data
+    loadtotaldata = LoadTotalData()
+TypeError: 'module' object is not callable
+2018-05-21 14:40:40,522 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 22, in load_invest_relation
+    conn = pymssql.connect(server, user, password, "CRDB")
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 552, in _mssql.MSSQLConnection.__init__ (_mssql.c:5891)
+TypeError: argument of type 'NoneType' is not iterable
+2018-05-21 14:58:06,659 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 22, in load_invest_relation
+    conn = pymssql.connect(server, user, password, "CRDB")
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 552, in _mssql.MSSQLConnection.__init__ (_mssql.c:5891)
+TypeError: argument of type 'NoneType' is not iterable
+2018-05-21 15:00:25,395 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 22, in load_invest_relation
+    conn = pymssql.connect(server, user, password, "CRDB")
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 552, in _mssql.MSSQLConnection.__init__ (_mssql.c:5891)
+TypeError: argument of type 'NoneType' is not iterable
+2018-05-21 15:06:18,548 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 22, in load_invest_relation
+    conn = pymssql.connect(server, user, password, "CRDB")
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 552, in _mssql.MSSQLConnection.__init__ (_mssql.c:5891)
+TypeError: argument of type 'NoneType' is not iterable
+2018-05-21 15:20:24,926 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    conn = pymssql.connect("10.10.15.43", "app", "app127", "CRDB")
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 15:25:33,932 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    conn = pymssql.connect("10.10.13.17", "app", "app127", "CRDB")
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 15:30:08,409 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    conn = pymssql.connect("10.10.13.17:1433", "app", "app127", "CRDB")
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 15:48:17,963 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    conn = pymssql.connect("10.10.13.17", "app", "app127", "CRDB")
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 15:53:27,991 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    conn = pymssql.connect(host="10.10.13.17:1433", user="app", password="app127", database="CRDB")
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 15:55:37,423 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    conn = pymssql.connect(host="10.10.13.17", port= "1433", user="app", password="app127", database="CRDB")
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 15:58:16,929 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 24, in load_invest_relation
+    conn = _mssql.connect(host="10.10.13.17:1433", user="app", password="app127", database="CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 542, in _mssql.MSSQLConnection.__init__ (_mssql.c:5779)
+TypeError: __init__() got an unexpected keyword argument 'host'
+2018-05-21 15:59:52,942 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 24, in load_invest_relation
+    conn = _mssql.connect(host="10.10.13.17", port="1433", user="app", password="app127", database="CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 542, in _mssql.MSSQLConnection.__init__ (_mssql.c:5779)
+TypeError: __init__() got an unexpected keyword argument 'host'
+2018-05-21 16:02:45,535 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 24, in load_invest_relation
+    conn = _mssql.connect(hostname="10.10.13.17", port="1433", user="app", password="app127", database="CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 542, in _mssql.MSSQLConnection.__init__ (_mssql.c:5779)
+TypeError: __init__() got an unexpected keyword argument 'hostname'
+2018-05-21 16:03:46,118 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 24, in load_invest_relation
+    conn = _mssql.connect(hostname="10.10.13.17:1433", user="app", password="app127", database="CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 542, in _mssql.MSSQLConnection.__init__ (_mssql.c:5779)
+TypeError: __init__() got an unexpected keyword argument 'hostname'
+2018-05-21 16:05:48,453 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 24, in load_invest_relation
+    conn = _mssql.connect("10.10.13.17:1433", "app", "app127", "CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 16:14:38,812 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 24, in load_invest_relation
+    conn = _mssql.connect("10.10.13.17:1433", "app", "app127", "CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+2018-05-21 16:58:34,124 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 25, in load_invest_relation
+    conn = _mssql.connect(server, user, password, "CRDB")
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 552, in _mssql.MSSQLConnection.__init__ (_mssql.c:5891)
+TypeError: argument of type 'NoneType' is not iterable
+2018-05-21 19:49:03,641 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 23, in load_invest_relation
+    ctx = cachehandler.get_context(id)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/cache_handlers/CacheHandler.py", line 22, in get_context
+    res = r.get(ctx_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/client.py", line 976, in get
+    return self.execute_command('GET', name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    self.on_connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/connection.py", line 567, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/redis/connection.py", line 629, in read_response
+    raise response
+redis.exceptions.ResponseError: NOAUTH Authentication required.
+2018-05-21 19:51:14,823 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 25, in load_invest_relation
+    ctx.last = 0
+AttributeError: 'dict' object has no attribute 'last'
+2018-05-21 19:59:39,430 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 25, in load_invest_relation
+    ctx.last = 0
+AttributeError: 'dict' object has no attribute 'last'
+2018-05-21 20:01:52,691 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 29, in load_invest_relation
+    file = fs.open(csv_file_path)
+AttributeError: module 'fs' has no attribute 'open'
+2018-05-21 20:27:22,344 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 38, in load_invest_relation
+    rows = pd.read_sql(sql, engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 416, in read_sql
+    chunksize=chunksize)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 1092, in read_query
+    result = self.execute(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 983, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2074, in execute
+    connection = self.contextual_connect(close_with_result=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+sqlalchemy.exc.OperationalError: (pymssql.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n') (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-05-21 20:41:20,846 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 37, in load_invest_relation
+    "tmstamp > cast( cast({} as bigint) as binary(8)) order by tmstamp".format(ctx.last)
+AttributeError: 'dict' object has no attribute 'last'
+2018-05-21 20:46:23,301 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 38, in load_invest_relation
+    rows = pd.read_sql(sql, engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 416, in read_sql
+    chunksize=chunksize)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 1092, in read_query
+    result = self.execute(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 983, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2074, in execute
+    connection = self.contextual_connect(close_with_result=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+sqlalchemy.exc.OperationalError: (pymssql.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n') (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-05-21 21:41:57,784 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 38, in load_invest_relation
+    "tmstamp > cast( cast({} as bigint) as binary(8)) order by tmstamp".format(ctx['last'])
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 403, in read_sql
+    _is_table_name = pandas_sql.has_table(sql)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 1092, in read_query
+    result = self.execute(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 983, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2074, in execute
+    connection = self.contextual_connect(close_with_result=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+sqlalchemy.exc.OperationalError: (pymssql.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n') (Background on this error at: http://sqlalche.me/e/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 38, in load_invest_relation
+    "tmstamp > cast( cast({} as bigint) as binary(8)) order by tmstamp".format(ctx['last'])
+BrokenPipeError: [Errno 32] Broken pipe
+2018-05-22 18:38:03,770 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 39, in load_invest_relation
+    rows = pd.read_sql(sql, self.__engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 416, in read_sql
+    chunksize=chunksize)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 1092, in read_query
+    result = self.execute(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 983, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2074, in execute
+    connection = self.contextual_connect(close_with_result=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+sqlalchemy.exc.OperationalError: (pymssql.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n') (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-05-25 13:42:43,035 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "pymssql.pyx", line 635, in pymssql.connect (pymssql.c:10734)
+  File "_mssql.pyx", line 1902, in _mssql.connect (_mssql.c:21821)
+  File "_mssql.pyx", line 637, in _mssql.MSSQLConnection.__init__ (_mssql.c:6581)
+  File "_mssql.pyx", line 1630, in _mssql.maybe_raise_MSSQLDatabaseException (_mssql.c:17524)
+_mssql.MSSQLDatabaseException: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+pymssql.OperationalError: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 39, in load_invest_relation
+    rows = pd.read_sql(sql, self.__engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 416, in read_sql
+    chunksize=chunksize)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 1092, in read_query
+    result = self.execute(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/sql.py", line 983, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2074, in execute
+    connection = self.contextual_connect(close_with_result=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "pymssql.pyx", line 641, in pymssql.connect (pymssql.c:10824)
+sqlalchemy.exc.OperationalError: (pymssql.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist\nNet-Lib error during Operation now in progress (36)\n') (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-05-25 14:40:19,198 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 48, in load_invest_relation
+    file.write(_from, _to, weight)
+TypeError: write() takes exactly one argument (3 given)
+2018-05-25 14:52:12,719 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 48, in load_invest_relation
+    file.write(_from, _to, weight)
+TypeError: write() takes exactly one argument (3 given)
+2018-05-25 15:16:15,526 - aiohttp.server - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 410, in start
+    resp = yield from self._request_handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web.py", line 325, in _handle
+    resp = yield from handler(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 93, in impl
+    return (yield from handler(request))
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/graph_path_search.py", line 34, in handler_update_total_data
+    query_result = loadtotaldata.load_invest_relation(flag)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/total_data_handlers/LoadTotalData.py", line 52, in load_invest_relation
+    cachehandler.save_context(id, ctx)
+  File "/Users/tzfjsyz/Documents/Projects/PythonApp/graph_path_search/cache_handlers/CacheHandler.py", line 16, in save_context
+    res = r.set(ctx_id, json.loads(ctx))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
